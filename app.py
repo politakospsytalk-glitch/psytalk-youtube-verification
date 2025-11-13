@@ -10,7 +10,7 @@ app.secret_key = "super_secret_key_change_this"
 CLIENT_SECRETS_FILE = "client_secret.json"
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
 
-CHANNEL_ID = "YOUR_CHANNEL_ID_HERE"  # βάλε το δικό σου κανάλι
+CHANNEL_ID = "UCgJU1icAfnBJ_Nhfvm4WUGg"  # PSY-TALK κανάλι
 
 @app.route("/")
 def index():
