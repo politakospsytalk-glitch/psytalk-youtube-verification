@@ -54,15 +54,7 @@ def oauth2callback():
         forChannelId=CHANNEL_ID
     )@app.route('/download')
 def download():
-    return send_file("ebook.pdf", as_attachment=True)
-    response = request_subs.execute()
-
-    if response.get("items"):
-        <h1>Είσαι εγγεγραμμένος! Κατέβασε το e-book.</h1>
-    <a href="/download" style="font-size:22px;">➡️ Κατέβασε εδώ το e-book</a>
-"""
-    else:
-        return "<h1>Δεν είστε εγγεγραμμένος στο κανάλι.</h1>"
-
+    return send_file("gift1.pdf", as_attachment=True)
+  
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
