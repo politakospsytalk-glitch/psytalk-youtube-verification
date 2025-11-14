@@ -53,7 +53,7 @@ def oauth2callback():
         mine=True,
         forChannelId=CHANNEL_ID
     )
-    @app.route('/download')
+@app.route('/download')
 def download():
      return redirect("https://drive.google.com/uc?export=download&id=1uKlsMLDw7PX3Jha6xSxuNK538jgghQk7")
   
