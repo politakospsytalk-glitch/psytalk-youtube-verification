@@ -55,7 +55,7 @@ def oauth2callback():
     )
 @app.route('/download')
 def download():
-     return redirect("https://drive.google.com/uc?export=download&id=1uKlsMLDw7PX3Jha6xSxuNK538jgghQk7")
+    return redirect("https://drive.google.com/uc?export=download&id=1uKlsMLDw7PX3Jha6xSxuNK538jgghQk7")
   
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
