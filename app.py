@@ -52,9 +52,10 @@ def oauth2callback():
         part="snippet",
         mine=True,
         forChannelId=CHANNEL_ID
-    )@app.route('/download')
+    )
+    @app.route('/download')
 def download():
-    return send_file("gift1.pdf", as_attachment=True)
+     return redirect("https://drive.google.com/uc?export=download&id=1uKlsMLDw7PX3Jha6xSxuNK538jgghQk7")
   
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
