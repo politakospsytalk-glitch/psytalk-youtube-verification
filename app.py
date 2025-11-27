@@ -24,7 +24,7 @@ from googleapiclient.discovery import build
 
 # ------------------ CONFIG ------------------
 # Replace with your Channel ID (canonical channel ID, e.g. "UCgJU1icAfnBJ_Nhfvm4WUGg")
-YOUTUBE_CHANNEL_ID = os.getenv("YOUTUBE_CHANNEL_ID", "UCXXXXXXXXXXXXXXXXXXXXXXXX")
+YOUTUBE_CHANNEL_ID = os.getenv("YOUTUBE_CHANNEL_ID", "UCgJU1icAfnBJ_Nhfvm4WUGg")
 
 # OAuth 2.0 client secrets JSON path (download from Google Cloud Console)
 OAUTH_CLIENT_SECRETS = os.getenv("OAUTH_CLIENT_SECRETS", "client_secret.json")
