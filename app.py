@@ -227,7 +227,7 @@ def _build_flow(state=None):
             f"Λείπει το {OAUTH_CLIENT_SECRETS}. Κατέβασέ το από Google Cloud Console (OAuth 2.0 client secrets)."
         )
 
-    redirect_uri = url_for('oauth2callback', _external=True)
+    redirect_uri = "https://politakospsytalk.com/oauth2callback"
     flow = Flow.from_client_secrets_file(
         OAUTH_CLIENT_SECRETS,
         scopes=SCOPES,
